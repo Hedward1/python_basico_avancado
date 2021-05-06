@@ -91,9 +91,14 @@ linux = Pinguim('linux')
 print(linux.andar())
 print(linux.nadar())
 print(linux.cumprimenta())  # Eu sou linux da terra. #### Method resolution order na prox aula
+                            # MRO - é a sequênci das heranças, podendo ser usado com o help()
 
 print(f'O linux é instancia de Pinguim ? {isinstance(linux,Pinguim)}')
 print(f'O linux é instancia de Aquatico ? {isinstance(linux,Aquatico)}')
 print(f'O linux é instancia de Terrestre ? {isinstance(linux,Terrestre)}')
 print(f'O linux é instancia de Animal ? {isinstance(linux,Animal)}')
 print(f'O linux é instancia de object ? {isinstance(linux,object)}')
+
+print(Pinguim.__mro__)
+print(Pinguim.mro())
+
